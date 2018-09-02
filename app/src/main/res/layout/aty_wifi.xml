@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.mkblog.huashelper.activity.WifiAty"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <!-- 一键连接与状态展示 -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#7e7e7e"
+            android:text="加载中..."
+            android:id="@+id/tv_wifi_status"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wifi_status"
+            android:layout_marginTop="20dp">
+
+            <Button
+                style="@style/BtnStyle"
+                android:layout_width="wrap_content"
+                android:minWidth="120dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/btn_wifi_login"
+                android:text="注销登录" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 流量时长信息展示 -->
+    <LinearLayout
+        android:id="@+id/wifi_data_area"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- 流量信息 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rl_data">
+
+                <TextView
+                    style="@style/wifi_val_tv"
+                    android:id="@+id/tv_wifi_data"
+                    android:text="23423" />
+
+                <TextView
+                    style="@style/wifi_unit_tv"
+                    android:text="MB"
+                    android:id="@+id/tv_wifi_unit"
+                    android:layout_alignBaseline="@+id/tv_wifi_data"
+                    android:layout_toRightOf="@+id/tv_wifi_data"
+                    android:layout_toEndOf="@+id/tv_wifi_data" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/wifi_title_tv"
+                android:layout_below="@+id/rl_data"
+                android:text="已用流量" />
+        </RelativeLayout>
+
+        <!-- 流量信息 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rl_time">
+
+                <TextView
+                    style="@style/wifi_val_tv"
+                    android:id="@+id/tv_wifi_time"
+                    android:text="23423"/>
+
+                <TextView
+                    style="@style/wifi_unit_tv"
+                    android:text="Min"
+                    android:layout_alignBaseline="@+id/tv_wifi_time"
+                    android:layout_toRightOf="@+id/tv_wifi_time"
+                    android:layout_toEndOf="@+id/tv_wifi_time" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/wifi_title_tv"
+                android:layout_below="@+id/rl_time"
+                android:text="上网时长" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

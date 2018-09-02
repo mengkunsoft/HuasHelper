@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--用来设置TextView的背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#98D262" />
+    <corners android:radius="@dimen/course_radius" />
+</shape>

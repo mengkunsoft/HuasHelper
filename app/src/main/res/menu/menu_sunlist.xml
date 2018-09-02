@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="我要咨询"
+        app:showAsAction="never"
+        android:id="@+id/menu_sun_consult"/>
+
+    <item
+        android:title="我要求助"
+        app:showAsAction="never"
+        android:id="@+id/menu_sun_appeal"/>
+
+    <item
+        android:title="我要表扬"
+        app:showAsAction="never"
+        android:id="@+id/menu_sun_praise"/>
+
+    <item
+        android:title="我要建议"
+        app:showAsAction="never"
+        android:id="@+id/menu_sun_suggestions"/>
+
+    <item
+        android:title="我要投诉"
+        app:showAsAction="never"
+        android:id="@+id/menu_sun_complaint"/>
+</menu>

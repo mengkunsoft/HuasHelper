@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- toolbar 高度 -->
+    <dimen name="toolbar_height">50dp</dimen>
+
+    <!-- 列表中文字大小 -->
+    <dimen name="txt_list">14sp</dimen>
+
+    <!-- 通用文字大小 -->
+    <dimen name="txt_normal">15sp</dimen>
+
+    <!-- 按钮圆角 -->
+    <dimen name="btn_radius">8px</dimen>
+
+    <!-- 课程圆角 -->
+    <dimen name="course_radius">5dip</dimen>
+
+    <!-- 课程圆角 -->
+    <dimen name="item_gap">20dp</dimen>
+</resources>

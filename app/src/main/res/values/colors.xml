@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 加载到底颜色 -->
+    <color name="colorPrimary">#9f9f9f</color>
+    <!-- 导航栏背景色 -->
+    <color name="colorPrimaryDark">#3496e9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#ffffff</color>
+
+    <!-- 默认的文本颜色 -->
+    <color name="textColor">#6b6b6b</color>
+
+    <!-- 输入框 hint 颜色 -->
+    <color name="colorHint">#bfbfbf</color>
+
+    <!-- 顶部工具栏颜色 -->
+    <color name="toolbar">#3496e9</color>
+
+    <!-- 按钮颜色 -->
+    <color name="btn_pressed">#0e98cb</color>
+    <color name="btn_normal">#12b7f5</color>
+    <color name="btn_enabled">#aeaeae</color>
+    <!-- 危险按钮颜色 -->
+    <color name="btn_danger_normal">#FA5555</color>
+    <color name="btn_danger_pressed">#e44a4a</color>
+
+</resources>

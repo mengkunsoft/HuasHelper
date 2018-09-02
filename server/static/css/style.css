@@ -1,0 +1,18 @@
+@charset "utf-8";
+/**************************************************
+ * 文理人社区 公用样式文件
+ * 编写：mengkun(http://mkblog.cn)
+ * 时间：2017-10-25
+ *************************************************/
+* {
+    /*font-family: Microsoft Yahei, "微软雅黑", "Helvetica Neue", Helvetica, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;*/
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

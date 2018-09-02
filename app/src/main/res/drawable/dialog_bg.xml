@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- dialog 的 圆形边框 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!-- 渐变 -->
+            <!--<gradient-->
+                <!--android:angle="270"-->
+                <!--android:endColor="#fff"-->
+                <!--android:startColor="#fff" />-->
+
+            <!-- 填充的颜色 -->
+            <solid
+                android:color="#fff"/>
+
+            <corners
+                android:radius="2dp"/>
+           
+        </shape>
+    </item>
+
+</selector>

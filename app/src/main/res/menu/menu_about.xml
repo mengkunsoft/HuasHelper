@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 关于界面的菜单 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="访问官网"
+        app:showAsAction="never"
+        android:id="@+id/menu_about_homepage"/>
+
+    <item
+        android:title="意见反馈"
+        app:showAsAction="never"
+        android:id="@+id/menu_about_feedback"/>
+
+    <item
+        android:title="给个好评"
+        app:showAsAction="never"
+        android:id="@+id/menu_about_like"/>
+
+    <item
+        android:title="分享给好友"
+        app:showAsAction="never"
+        android:id="@+id/menu_about_share"/>
+</menu>

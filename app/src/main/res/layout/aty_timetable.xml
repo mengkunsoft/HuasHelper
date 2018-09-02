@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 课程表界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <!-- 显示星期 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:paddingLeft="25dp">
+
+        <cn.mkblog.huashelper.tool.WeekTitle
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <!-- 课程表内容区 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 课程节次 -->
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="一"/>
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="二"/>
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="三"/>
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="四"/>
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="五"/>
+
+                <TextView
+                    style="@style/classNoName"
+                    android:text="六"/>
+
+            </LinearLayout>
+
+            <!-- 课程表 -->
+            <GridView
+                android:id="@+id/course_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="1dp"
+                android:numColumns="7"
+                android:horizontalSpacing="1dp"
+                android:verticalSpacing="1dp"
+                android:stretchMode="columnWidth"
+                android:background="#e7e7e7"
+                tools:ignore="NestedScrolling">
+
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.mkblog.huashelper.activity.CourseEditAty">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="课名" />
+
+                <cn.mkblog.huashelper.tool.ZeroAutoCompleteTextView
+                    android:id="@+id/course_name"
+                    style="@style/EditTextStyle"
+                    android:completionThreshold="1"
+                    android:hint="课程名字" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="讲师" />
+
+                <cn.mkblog.huashelper.tool.ZeroAutoCompleteTextView
+                    android:id="@+id/course_teacher"
+                    style="@style/EditTextStyle"
+                    android:completionThreshold="1"
+                    android:hint="任课教师" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="地点" />
+
+                <cn.mkblog.huashelper.tool.ZeroAutoCompleteTextView
+                    android:id="@+id/course_room"
+                    style="@style/EditTextStyle"
+                    android:completionThreshold="1"
+                    android:hint="上课地点" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="星期" />
+
+                <Spinner
+                    android:id="@+id/course_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="节次" />
+
+                <Spinner
+                    android:id="@+id/course_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="周次" />
+
+                <TextView
+                    android:id="@+id/course_circle"
+                    style="@style/EditTextStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/courseEditItem"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/btn_delete_course"
+                    style="@style/BtnStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/btn_danger_bg"
+                    android:text="删 除" />
+
+                <Button
+                    android:id="@+id/btn_save_course"
+                    style="@style/BtnStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:text="保 存" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

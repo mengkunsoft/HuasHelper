@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 新闻列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/news_title"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/txt_list"
+        android:textColor="#4b4b4b"
+        android:layout_marginRight="80dp"
+        android:text="我校召开主要学生干部培训暨学风建设动员大会学风建设动员大会"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/news_time"
+        android:textSize="@dimen/txt_list"
+        android:textColor="#767676"
+        android:layout_alignParentRight="true"
+        android:text="[2017/10/23]"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.mkblog.huashelper.activity.WifiSetAty"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="账号" />
+
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:id="@+id/et_wifi_user"
+                    android:hint="校园网账号/学号" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="密码"/>
+
+                <EditText
+                    style="@style/EditTextStyle"
+                    android:id="@+id/et_wifi_pw"
+                    android:inputType="textPassword"
+                    android:hint="校园网密码/身份证后六位" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/courseEditItem">
+
+                <TextView
+                    style="@style/courseEditItemTitle"
+                    android:text="网络"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/wifi_isp_select" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/courseEditItem"
+                android:paddingTop="10dp">
+
+                <Button
+                    style="@style/BtnStyle"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:id="@+id/btn_save_wifi"
+                    android:text="保 存"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

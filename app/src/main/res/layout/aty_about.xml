@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.mkblog.huashelper.activity.AboutAty"
+    android:orientation="vertical">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!-- App 图标 -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!-- App 名字 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="25dp"
+            android:text="@string/app_name"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:background="@drawable/line_split"/>
+
+        <!-- 详细内容 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:textColor="#3e3e3e"
+            android:textSize="14sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textIsSelectable="true"
+            android:autoLink="web"
+            android:textColorLink="#8b8b8b"
+            android:text="@string/p_long"
+            android:id="@+id/tv_about"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

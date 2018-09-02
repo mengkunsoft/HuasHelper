@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:text="成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩成绩"
+        android:id="@+id/score_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:lines="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="#47b602"
+        android:text="100分"
+        android:id="@+id/score_count"/>
+
+</LinearLayout>

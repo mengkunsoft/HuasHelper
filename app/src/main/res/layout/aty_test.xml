@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/home_english_img"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#7f000000"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.3"
+            android:lines="4"
+            android:ellipsize="end"
+            android:textIsSelectable="true"
+            android:text="Never say goodbye because saying goodbye means going away and going away means forgetting."
+            android:id="@+id/home_english_txt"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

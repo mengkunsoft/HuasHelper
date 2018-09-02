@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="-1dp"
+        android:background="@color/toolbar">
+
+        <!--@drawable/split_item_bg-->
+        <!--android:textColor="#737373"-->
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/home_title"
+            android:adjustViewBounds="true"
+            android:src="@drawable/huas_logo_white" />
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!-- 天气区域 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap"
+                android:background="@drawable/split_item_bg">
+
+                <!-- 天气图标 -->
+                <ImageView
+                    android:id="@+id/home_weather_icon"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/weather_0" />
+
+                <!-- 温度 -->
+                <TextView
+                    android:id="@+id/home_weather_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/home_weather_icon"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-thin"
+                    android:lines="1"
+                    android:text="- °C"
+                    android:textAlignment="center"
+                    android:textColor="#a6a6a6"
+                    android:textSize="50sp" />
+
+                <!-- 天气信息 -->
+                <TextView
+                    android:id="@+id/home_weather_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/home_weather_temp"
+                    android:layout_below="@+id/home_weather_temp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="天气信息读取中.."
+                    android:textAlignment="center"
+                    android:textColor="#f4c265"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <!-- 功能区 -->
+            <cn.mkblog.huashelper.tool.WrapGridView
+                android:id="@+id/home_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap"
+                android:background="@drawable/split_item_bg"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+            <!-- 今日课程 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_gap"
+                android:background="@drawable/split_item_bg"
+                android:orientation="vertical">
+
+                <!-- 日期显示 -->
+                <TextView
+                    android:id="@+id/home_data_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:paddingBottom="10dp"
+                    android:text="2017年11月26日 星期日 第5周"
+                    android:textAlignment="center"
+                    android:textColor="#b9b9b9"
+                    android:textSize="16sp" />
+
+                <!-- 分割线 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:background="#eee" />
+
+                <!-- 今日无课 -->
+                <TextView
+                    android:id="@+id/home_course_null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginTop="10dp"
+                    android:text="- 今日无课 -"
+                    android:textAlignment="center"
+                    android:textColor="#cccccc"
+                    android:textSize="14dp" />
+
+                <!-- 课程列表 -->
+                <cn.mkblog.huashelper.tool.WrapListView
+                    android:id="@+id/home_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </cn.mkblog.huashelper.tool.WrapListView>
+
+            </LinearLayout>
+
+            <!-- 每日一句英语 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="@dimen/item_gap"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="-10dp"
+                android:layout_marginTop="@dimen/item_gap">
+
+                <ImageView
+                    android:id="@+id/home_english_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/home_english_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a3000000"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.3"
+                    android:lines="4"
+                    android:padding="20dp"
+                    android:text="@string/p_long"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

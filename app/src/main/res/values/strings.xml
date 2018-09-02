@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">文理助手</string>
+
+    <!-- 占位字符 -->
+    <string name="p_short">占位</string>
+    <string name="p_long">占位字符占位字符占位字符占位字符占位字符占位字符占位字符占位字符占位字符占位字符</string>
+
+    <!-- 首页 icon 底部字符 -->
+    <string name="home_news">文理新闻</string>
+    <string name="home_sun">阳光服务</string>
+    <string name="home_score">成绩查询</string>
+    <string name="home_library">馆藏检索</string>
+    <string name="home_pay">在线缴费</string>
+    <string name="home_vista">校园街景</string>
+    <string name="home_wifi">一键联网</string>
+    <string name="home_timetable">我的课表</string>
+    <string name="home_update">检查更新</string>
+    <string name="home_bbs">校友社区</string>
+    <string name="home_tieba">百度贴吧</string>
+    <string name="home_about">关于软件</string>
+
+</resources>

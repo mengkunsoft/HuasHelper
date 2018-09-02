@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.mkblog.huashelper">
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 外置SD卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 创建快捷方式权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.HomeAty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.NewsAty" />
+        <activity android:name=".activity.TestAty">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".activity.WebAty" />
+        <activity android:name=".activity.SunListAty" />
+        <activity android:name=".activity.SunViewAty" />
+        <activity android:name=".activity.LoginJwAty" />
+        <activity android:name=".activity.CheckScoresAty" />
+        <activity android:name=".activity.TimetableAty" />
+        <activity android:name=".activity.CourseEditAty" />
+        <activity android:name=".activity.AboutAty" />
+        <activity android:name=".activity.WifiAty">
+            <intent-filter>
+                <!-- 当程序删除时，快捷方式也会跟着删除 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 必须加上这个，否则下面无法直接使用自定的action -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WifiSetAty" />
+    </application>
+
+</manifest>

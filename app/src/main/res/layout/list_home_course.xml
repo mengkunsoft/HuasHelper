@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 首页课程信息 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="2"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#c2c2c2"
+        android:textSize="45sp"
+        android:textStyle="italic"
+        android:lines="1"
+        android:ellipsize="end"
+        android:id="@+id/home_course_no"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textColor="#f2aa00"
+            android:textSize="18sp"
+            android:text="信号与线性系统"
+            android:id="@+id/home_course_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#d4d4d4"
+                android:textSize="14sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="教室：T3-D101"
+                android:id="@+id/home_course_classroom"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#d4d4d4"
+                android:textSize="14sp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="讲师：xxx"
+                android:id="@+id/home_course_teacher"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

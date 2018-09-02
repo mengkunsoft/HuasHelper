@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#868383"
+            android:textSize="28sp"
+            android:layout_marginBottom="35dp"
+            android:text="登录教务系统"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditTextStyle"
+                android:inputType="text"
+                android:hint="请输入学号"
+                android:id="@+id/et_jw_sid"/>
+
+        </LinearLayout>
+
+        <!-- 密码输入部分 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/EditTextStyle"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:id="@+id/et_jw_password"/>
+
+        </LinearLayout>
+
+        <!-- 验证码部分 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 验证码输入 -->
+            <EditText
+                android:id="@+id/et_jw_verify"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="请输验证码"
+                android:inputType="number"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                />
+
+            <!-- 验证码图片 -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/verifycode"
+                android:contentDescription="验证码"
+                android:id="@+id/iv_jw_verify"/>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/BtnStyle"
+            android:layout_marginTop="25dp"
+            android:id="@+id/btn_login_jw"
+            android:text="登       录"/>
+    </LinearLayout>
+</RelativeLayout>

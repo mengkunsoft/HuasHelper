@@ -1,0 +1,200 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- 去除ActionBar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item>
+    </style>
+
+    <!-- 默认Activity跳转动画 -->
+    <style name="ActivityAnimation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <!-- ListView 样式 -->
+    <style name="ListStyle">
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">#f5f5f5</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="BtnStyle">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/input_bg</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#12b7f5</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textCursorDrawable">@drawable/input_cursor</item>
+    </style>
+
+    <!-- Toolbar主题设置-->
+    <style name="ToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="android:colorBackground">#e3333333</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--<item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>-->
+    </style>
+
+    <!-- 修改toolbar弹出菜单的位置 -->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!-- 修改toolbar菜单按钮的style -->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <!--<item name="android:src">@drawable/ic_launcher_foreground</item>-->
+    </style>-->
+
+    <!-- toolbar菜单按钮的颜色 -->
+    <style name="ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+    </style>
+
+    <!-- toolbar标题样式 -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- toolbar 左侧按钮样式 -->
+    <style name="ToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">@dimen/toolbar_height</item>
+        <item name="android:width">@dimen/toolbar_height</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- dialog 样式 -->
+    <style name="MkDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- dialog 的按钮样式 -->
+    <style name="MkDialogBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@drawable/dialog_btn</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+    </style>
+
+    <!-- 阳光平台帖子详情页一项 -->
+    <style name="sunViewDetailItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/line_split</item>
+    </style>
+
+    <!-- 阳光平台帖子详情页一项标题 -->
+    <style name="sunViewDetailItemName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#878383</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+
+    <!-- 阳光平台帖子详情页一项内容 -->
+    <style name="sunViewDetailItemData">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">@dimen/txt_normal</item>
+        <item name="android:text">-</item>
+    </style>
+
+    <!-- 课程编号 -->
+    <style name="classNoName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">89dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#848484</item>
+    </style>
+
+    <!-- 课程编辑一项 -->
+    <style name="courseEditItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 课程编辑一项标题 -->
+    <style name="courseEditItemTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">#797979</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!-- wifi流量、时长统计信息 -->
+    <style name="wifi_val_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">#cfcece</item>
+    </style>
+
+    <!-- wifi流量、时长统计信息单位 -->
+    <style name="wifi_unit_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">#a7a7a7</item>
+    </style>
+
+    <!-- 统计信息标题 -->
+    <style name="wifi_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">#c2c2c2</item>
+    </style>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.mkblog.huashelper.activity.SunViewAty"
+    android:orientation="vertical">
+
+    <!-- 顶部导航条 -->
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 信件主题 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="信件主题："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_subject"/>
+            </LinearLayout>
+
+            <!-- 信件作者 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="信件作者："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_from"/>
+            </LinearLayout>
+
+            <!-- 信件类型 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="信件类型："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_types"/>
+            </LinearLayout>
+
+            <!-- 受理编号 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="受理编号："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_no"/>
+            </LinearLayout>
+
+            <!-- 提交时间 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="提交时间："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_sendtime"/>
+            </LinearLayout>
+
+            <!-- 处理时间 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="处理时间："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_replytime"/>
+            </LinearLayout>
+
+            <!-- 受理单位 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="受理单位："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_to"/>
+            </LinearLayout>
+
+            <!-- 当前状态 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="当前状态："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_status"/>
+            </LinearLayout>
+
+            <!-- 信件内容 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="信件内容："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_content"/>
+            </LinearLayout>
+
+            <!-- 回复内容 -->
+            <LinearLayout
+                style="@style/sunViewDetailItem">
+                <TextView
+                    style="@style/sunViewDetailItemName"
+                    android:text="回复内容："/>
+
+                <TextView
+                    style="@style/sunViewDetailItemData"
+                    android:id="@+id/sun_reply"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

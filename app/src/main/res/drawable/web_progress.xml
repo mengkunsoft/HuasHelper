@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 网页加载进度条 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  设置背景色（黑色）  -->
+    <item  android:id="@android:id/background" >
+        <shape>
+            <!-- 进度条的四个棱角大小 0 为都是直角 随着值的增大角越圆滑-->
+            <corners android:radius="0dip" />
+            <gradient
+                android:startColor="#d2d2d2"
+                android:endColor="#d6d6d6" />
+        </shape>
+    </item>
+
+    <!--  设置进度条颜色（绿色）  -->
+    <item  android:id="@android:id/progress" >
+        <clip>
+            <shape>
+                <corners
+                    android:radius="0dip" />
+                <gradient
+                    android:startColor="#898989"
+                    android:endColor="#818181" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

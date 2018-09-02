@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 新闻列表 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/dot_green"
+        android:id="@+id/sun_status"
+        android:contentDescription="状态" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/sun_status"
+        android:id="@+id/sun_title"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/txt_list"
+        android:textColor="#4b4b4b"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="70dp"
+        android:text="网络课程网站进不去，"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/sun_types"
+        android:textSize="@dimen/txt_list"
+        android:textColor="#767676"
+        android:layout_alignParentRight="true"
+        android:text="[群众建议]"/>
+
+</RelativeLayout>

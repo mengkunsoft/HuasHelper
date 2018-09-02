@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- dialog 底部按钮 -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按下后 -->
+    <item
+        android:state_pressed="true">
+
+        <shape>
+            <!-- 填充的颜色 -->
+            <solid
+                android:color="#f0f0f0"/>
+
+            <corners
+                android:radius="2dp"/>
+
+        </shape>
+    </item>
+
+    <!-- 按下前 -->
+    <item
+        android:drawable="@android:color/transparent"/>
+</selector>
